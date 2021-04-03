@@ -78,7 +78,7 @@ public class ShipperController {
 
         //model.addAttribute("shipperList",shipperRepository.findByCompanyname(searchName));
         model.addAttribute("shipperList",shipperRepository.listarTransportistasPorNombre(searchName));
-        model.addAttribute("searchName",searchName);
+        model.addAttribute("searchName",searchName); //commet
         return "shipper/list";
     }
 }
