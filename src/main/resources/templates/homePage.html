@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Home Page</title>
+        <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}"/>
+        <script th:src="@{/js/jquery-3.5.1.slim.min.js}"></script>
+        <script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+    </head>
+    <body>
+        <div class="container-sm">
+            <h2>Home Page</h2>
+            <a th:href="@{/shipper}" class="btn btn-success">Shippers CRUD</a>
+        </div>
+    </body>
+</html>
