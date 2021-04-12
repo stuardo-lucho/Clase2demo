@@ -13,7 +13,7 @@ public class ClaseB {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int shipperid;
     @Column(nullable = false)
-    private String companyname;
+    private String companynameStuardo;
     private String phone;
 
     public int getShipperid() {
