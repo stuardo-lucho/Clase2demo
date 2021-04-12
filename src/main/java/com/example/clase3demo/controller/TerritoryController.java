@@ -26,6 +26,7 @@ public class TerritoryController {
     @GetMapping("/list")
     public String listTerritories(Model model){
 
+        //List<Territory> listaArribaKeiko = territoryRepository.findAll();
         List<Territory> listaterritorioStuardo = territoryRepository.findAllByTerritorydescription("abc");
         model.addAttribute("listOfTerritories", listaterritorioStuardo);
 
