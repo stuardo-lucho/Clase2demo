@@ -66,6 +66,7 @@ public class ShipperController {
     public String searchShipper(@RequestParam("searchName") String searchName,
                                 Model model){
 
+        //un nuevo comentario
         //model.addAttribute("shipperList",shipperRepository.findByCompanyname(searchName));
         model.addAttribute("shipperList",shipperRepository.listarTransportistasPorNombre(searchName));
         model.addAttribute("searchName",searchName);
@@ -76,13 +77,9 @@ public class ShipperController {
     public String searchShipperPruebas(@RequestParam("searchName") String searchName,
                                 Model model){
 
-        //model.addAttribute("shipperList",shipperRepository.findByCompanyname(searchName));
         model.addAttribute("shipperList",shipperRepository.listarTransportistasPorNombre(searchName));
         model.addAttribute("searchName",searchName); 
-        /*
-          faltaba  esto
-          
-          */
+
         return "shipper/list";
     }
 }
