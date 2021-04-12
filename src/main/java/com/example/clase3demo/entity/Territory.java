@@ -1,31 +1,21 @@
-package com.example.clase3demo.entity;
+package com.example.demo.entity;
 
-import org.springframework.web.bind.annotation.GetMapping;
-
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
-@Table(name="territories")
+@Table(name = "territories")
 public class Territory {
 
     @Id
-    @Column(nullable = false)
     private String territoryid;
+
     @Column(nullable = false)
     private String territorydescription;
+
     @Column(nullable = false)
-    private int regionid;
+    private String regionid;
 
-    public String getTerritoryid() {
-        return territoryid;
-    }
 
-    public void setTerritoryid(String territoryid) {
-        this.territoryid = territoryid;
-    }
 
     public String getTerritorydescription() {
         return territorydescription;
@@ -35,11 +25,19 @@ public class Territory {
         this.territorydescription = territorydescription;
     }
 
-    public int getRegionid() {
+    public String getRegionid() {
         return regionid;
     }
 
-    public void setRegionid(int regionid) {
+    public void setRegionid(String regionid) {
         this.regionid = regionid;
+    }
+
+    public String getTerritoryid() {
+        return territoryid;
+    }
+
+    public void setTerritoryid(String territoryid) {
+        this.territoryid = territoryid;
     }
 }
